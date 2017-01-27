@@ -1,0 +1,15 @@
+<Group
+    width="screenWidth"
+    height="screenHeight">
+
+    <!-- Label with center-aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
+    <Label
+        text="Label Text"
+        align="center"
+        width="parentWidth/2"
+        height="parentHeight/2"
+        position="center"
+        skin="uiskin"
+        debug="true"/>
+
+</Group>

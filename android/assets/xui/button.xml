@@ -1,0 +1,5 @@
+<TextButton
+    skin="uiskin"
+    width="parentWidth * 0.9"
+    height="parentWidth * 0.3"
+    debug="true"/>

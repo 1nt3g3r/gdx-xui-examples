@@ -1,4 +1,26 @@
 <Group
     width="screenWidth"
     height="screenHeight"
-    debug="true"/>
+    debug="true">
+
+    <ScrollPane
+        width="parentWidth * 0.5"
+        height="parentHeight"
+        position="center"
+        skin="uiskin"
+        debug="true">
+
+        <VerticalGroup
+            width="parentWidth * 0.5"
+            height="screenHeight * 0.5"
+            position="center"
+            debug="true">
+
+            <LinkedActor
+                path="button"
+                text="Button 1"/>
+
+        </VerticalGroup>
+
+    </ScrollPane>
+</Group>
