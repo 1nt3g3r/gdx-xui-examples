@@ -1,0 +1,30 @@
+<!--Root group -->
+<Group
+    width="screenWidth"
+    height="screenHeight">
+
+    <!--Center actor with size in quarter of screen -->
+    <Group
+        width="screenWidth / 2"
+        height="screenHeight / 2"
+        x="(parentWidth - width)/2"
+        y="(parentHeight - height)/2"
+        debug="true">
+
+        <!-- Nested actor -->
+        <Actor
+            width="10"
+            height="10"
+            position="center"
+            debug="true"/>
+    </Group>
+
+    <!-- Variable definition -->
+    <var name="actorSize" value="screenWidth * 0.1"/>
+
+    <!-- Actor in top right corner -->
+    <Actor
+        size="actorSize"
+        position="top|right"
+        debug="true"/>
+</Group>
