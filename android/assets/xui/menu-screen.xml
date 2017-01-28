@@ -3,22 +3,52 @@
     height="screenHeight"
     debug="true">
 
+    <!-- Height of scroll pane with examples -->
+    <var name="scrollPaneHeight" value="parentHeight * 0.85"/>
+
+    <!--Header with title -->
+    <Group
+        width="parentWidth"
+        height="parentHeight * 0.99 - scrollPaneHeight"
+        position="top">
+
+        <!--Background-->
+        <Image
+            ninepatch="uiskin->default-pane"
+            width="parentWidth"
+            height="parentHeight"/>
+
+        <Label
+            skin="uiskin"
+            width="parentWidth"
+            height="parentHeight"
+            align="center"
+            text="Click on button to open screen with example actor. Press ESCAPE to return to Menu screen"/>
+
+    </Group>
+
+    <!--List with examples -->
     <ScrollPane
-        width="parentWidth * 0.5"
-        height="parentHeight"
-        position="center"
-        skin="uiskin"
-        debug="true">
+        width="parentWidth * 0.9"
+        height="scrollPaneHeight"
+        position="bottom | centerHorizontal"
+        skin="uiskin">
 
         <VerticalGroup
-            width="parentWidth * 0.5"
-            height="screenHeight * 0.5"
+            width="parentWidth * 0.9"
             position="center"
-            debug="true">
+            pad="screenHeight * 0.01"
+            space="screenHeight * 0.01">
 
             <LinkedActor
                 path="button"
-                text="Button 1"/>
+                name="actorWidgetExample"
+                button.text="Actor Widget Example"/>
+
+            <LinkedActor
+                path="button"
+                name="labelWidgetExample"
+                button.text="Label Widget Example"/>
 
         </VerticalGroup>
 

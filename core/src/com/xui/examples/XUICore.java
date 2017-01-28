@@ -3,6 +3,7 @@ package com.xui.examples;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.xui.examples.screens.MenuScreen;
 import com.xui.examples.screens.manager.Screens;
@@ -27,6 +28,7 @@ public class XUICore extends Game {
 
     private void registerXUIAssetProviders() {
         XUI.registerXUIAssetProvider(Skin.class, new XUIAssetManagerProvider(assetManager, Skin.class, "skins", "json"));
+        XUI.registerXUIAssetProvider(TextureAtlas.class, new XUIAssetManagerProvider(assetManager, TextureAtlas.class, "atlases", "atlas"));
     }
 	
 	@Override

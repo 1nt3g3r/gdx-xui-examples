@@ -4,12 +4,34 @@
 
     <!-- Label with center-aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
     <Label
-        text="Label Text"
+        text="Label with center-aligned text"
         align="center"
         width="parentWidth/2"
-        height="parentHeight/2"
+        height="parentHeight/4"
         position="center"
         skin="uiskin"
+        debug="true"/>
+
+    <!-- Label with top-right aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
+    <Label
+        text="Label with top-right aligned text"
+        align="top|right"
+        width="parentWidth/2"
+        height="parentHeight/4"
+        skin="uiskin"
+        position="top | centerHorizontal"
+        debug="true"/>
+
+    <!-- Label with changed text color, changed font scale, bottom-left aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
+    <Label
+        text="Label with bottom-left aligned text, changed font color and font scale"
+        align="bottom|left"
+        width="parentWidth/2"
+        height="parentHeight/4"
+        skin="uiskin"
+        fontScale="2"
+        fontColor="RED"
+        position="bottom | centerHorizontal"
         debug="true"/>
 
 </Group>

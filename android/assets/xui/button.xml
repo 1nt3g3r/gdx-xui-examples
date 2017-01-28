@@ -1,5 +1,11 @@
-<TextButton
-    skin="uiskin"
+<Group
     width="parentWidth * 0.9"
-    height="parentWidth * 0.3"
-    debug="true"/>
+    height="parentWidth * 0.1">
+
+    <TextButton
+        name="button"
+        skin="uiskin"
+        width="parentWidth"
+        height="parentHeight"
+        text="Some text"/>
+</Group>
