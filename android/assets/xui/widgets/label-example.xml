@@ -22,14 +22,15 @@
         position="top | centerHorizontal"
         debug="true"/>
 
-    <!-- Label with changed text color, changed font scale, bottom-left aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
+    <!-- Label with changed text color, changed font scale, top-left aligned text and LabelStyle from default libGDX skin (uiskin.json) -->
     <Label
-        text="Label with bottom-left aligned text, changed font color and font scale"
-        align="bottom|left"
+        text="Label with top-left aligned text, changed font color and font scale and enabled word wrapping"
+        align="top|left"
+        wrap="true"
         width="parentWidth/2"
         height="parentHeight/4"
         skin="uiskin"
-        fontScale="2"
+        fontScale="1.5"
         fontColor="RED"
         position="bottom | centerHorizontal"
         debug="true"/>

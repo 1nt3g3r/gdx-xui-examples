@@ -1,0 +1,71 @@
+<Group
+    width="screenWidth"
+    height="screenHeight">
+
+    <!-- Just single checkbox-->
+    <CheckBox
+        skin="uiskin"
+        width="300"
+        height="50"
+        text="Single Independent Checkbox"
+        position="center"
+        checked="true"/>
+
+    <!--Three Checkboxes, we can select only one. It's because we set buttonGroup attribtue-->
+    <Group
+        width="parentWidth"
+        height="parentHeight * 0.4"
+        position="bottom">
+
+        <!-- Background -->
+        <Image
+            ninepatch="uiskin->default-pane"
+            width="parentWidth"
+            height="parentHeight"/>
+
+        <!--Title label-->
+        <Label
+            skin="uiskin"
+            width="parentWidth"
+            height="parentHeight * 0.2"
+            position="top"
+            touchable="disabled"
+            text="Three Checkboxes, we can select only one. It's because we set buttonGroup attribtue"
+            align="center"/>
+
+        <var name="cbWidth" value="100"/>
+        <var name="cbHeight" value="30"/>
+
+        <HorizontalGroup
+            align="center"
+            width="parentWidth"
+            height="parentHeight"
+            space="screenWidth * 0.05"
+            pad="screenWidth * 0.05">
+
+            <CheckBox
+                skin="uiskin"
+                width="cbWidth"
+                height="cbHeight"
+                text="Checkbox A"
+                buttonGroup="checkboxes"
+                checked="true"/>
+
+            <CheckBox
+                skin="uiskin"
+                width="cbWidth"
+                height="cbHeight"
+                text="Checkbox B"
+                buttonGroup="checkboxes"/>
+
+            <CheckBox
+                skin="uiskin"
+                width="cbWidth"
+                height="cbHeight"
+                text="Checkbox C"
+                buttonGroup="checkboxes"/>
+
+        </HorizontalGroup>
+
+    </Group>
+</Group>

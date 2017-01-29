@@ -20,6 +20,7 @@ public class XUICore extends Game {
         assetManager = new AssetManager();
 
         XUI.init();
+        XUI.assets().loadDefaultAssets();
         registerXUIAssetProviders();
 
         Screens.init(this, batch);

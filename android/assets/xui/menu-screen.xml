@@ -50,6 +50,11 @@
                 name="labelWidgetExample"
                 button.text="Label Widget Example"/>
 
+            <LinkedActor
+                path="button"
+                name="checkboxWidgetExample"
+                button.text="Checkbox Widget Example"/>
+
         </VerticalGroup>
 
     </ScrollPane>

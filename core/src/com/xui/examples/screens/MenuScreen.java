@@ -1,12 +1,16 @@
 package com.xui.examples.screens;
 
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.xui.examples.Settings;
 import com.xui.examples.screens.manager.AbstractScreen;
 import com.xui.examples.screens.manager.Screens;
 
 import ua.com.integer.gdx.xml.ui.XUI;
+import ua.com.integer.gdx.xml.ui.res.XUIAssetsAccess;
 
 public class MenuScreen extends AbstractScreen {
     @Override
@@ -15,6 +19,7 @@ public class MenuScreen extends AbstractScreen {
 
         linkButtonWithExample("actorWidgetExample", "widgets/actor-example");
         linkButtonWithExample("labelWidgetExample", "widgets/label-example");
+        linkButtonWithExample("checkboxWidgetExample", "widgets/checkbox-example");
     }
 
     private void linkButtonWithExample(String buttonName, String exampleName) {

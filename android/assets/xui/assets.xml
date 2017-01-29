@@ -1,0 +1,6 @@
+<assets>
+    <buttonGroup
+        name="checkboxes"
+        minCheckCount="1"
+        maxCheckCount="1"/>
+</assets>
